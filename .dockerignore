@@ -1,0 +1,20 @@
+.dockerignore
+
+# Remove Git
+.git/
+.github/
+.gitattributes
+.gitignore
+
+# CI files
+.coveragerc
+.coveralls.yml
+.travis.yml
+appveyor.yml
+renovate.json
+setup.cfg
+tox.ini
+
+# others
+*.md
+LICENSE
