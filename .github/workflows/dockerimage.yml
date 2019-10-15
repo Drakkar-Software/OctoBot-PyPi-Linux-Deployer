@@ -34,4 +34,4 @@ jobs:
         name: drakkarsoftware/octobot-pypi-deploy:x86_64
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        dockerfile: i686/Dockerfile
+        dockerfile: x86_64/Dockerfile
