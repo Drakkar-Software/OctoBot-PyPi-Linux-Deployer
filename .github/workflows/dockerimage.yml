@@ -4,14 +4,14 @@ on: [push]
 
 jobs:
 
-  build-and-deploy-i868:
+  build-and-deploy-i686:
  
     runs-on: ubuntu-latest
  
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build . --file i868/Dockerfile --tag drakkarsoftware/octobot-pypi-deploy:i868
+      run: docker build . --file i686/Dockerfile --tag drakkarsoftware/octobot-pypi-deploy:i686
 
   
   build-and-deploy-x86_64:
