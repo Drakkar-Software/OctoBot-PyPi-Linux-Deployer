@@ -4,5 +4,7 @@ COPY . /deployer
 
 VOLUME /project
 
+RUN yum install -y libffi-devel.i386
+
 CMD ["/bin/bash", "/deployer/build.sh"]
 ENTRYPOINT ["/bin/bash", "/deployer/build.sh"]
