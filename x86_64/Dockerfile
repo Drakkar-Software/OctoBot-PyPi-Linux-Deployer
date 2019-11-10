@@ -4,7 +4,7 @@ COPY . /deployer
 
 VOLUME /project
 
-RUN yum install -y libffi-devel.x86_64
+RUN yum install -y libffi-devel.x86_64 openssl-devel libssl-devel python-devel
 
 CMD ["/bin/bash", "/deployer/build.sh"]
 ENTRYPOINT ["/bin/bash", "/deployer/build.sh"]
